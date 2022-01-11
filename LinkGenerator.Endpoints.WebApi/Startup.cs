@@ -1,7 +1,11 @@
+using LinkGenerator.Domain.Contracts.Links;
+using LinkGenerator.Infrastructure.Data.DbConfiguration;
+using LinkGenerator.Infrastructure.Data.Links;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -26,7 +30,9 @@ namespace LinkGenerator.Endpoints.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            string connectionString = Configuration.GetConnectionString("SqliteConn");
+            services.AddDbContext<SqliteDbContext>(options => options.UseSqlite(connectionString));
+            services.AddScoped<ILinkGenerator, LinkRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
