@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{4978F403-9EA7-407A-A16E-54D275468F61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{717D7B15-ACA1-464D-9221-59206E3ADD23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Endpoints", "Endpoints", "{B4E08330-0C98-4F3A-AC2F-6E543C8483C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkGenerator.Domain.Core", "LinkGenerator.Domain.Core\LinkGenerator.Domain.Core.csproj", "{A212CEE6-837D-49B4-8285-DB815EDE1DA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkGenerator.Domain.Contracts", "LinkGenerator.Domain.Contracts\LinkGenerator.Domain.Contracts.csproj", "{E3EF1026-44C1-49A9-9D71-5361ACF01E25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A212CEE6-837D-49B4-8285-DB815EDE1DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A212CEE6-837D-49B4-8285-DB815EDE1DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A212CEE6-837D-49B4-8285-DB815EDE1DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A212CEE6-837D-49B4-8285-DB815EDE1DA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3EF1026-44C1-49A9-9D71-5361ACF01E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3EF1026-44C1-49A9-9D71-5361ACF01E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3EF1026-44C1-49A9-9D71-5361ACF01E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3EF1026-44C1-49A9-9D71-5361ACF01E25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A212CEE6-837D-49B4-8285-DB815EDE1DA0} = {4978F403-9EA7-407A-A16E-54D275468F61}
+		{E3EF1026-44C1-49A9-9D71-5361ACF01E25} = {4978F403-9EA7-407A-A16E-54D275468F61}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04EEBA3B-F302-43FD-A5BF-143A75728BD8}
+	EndGlobalSection
+EndGlobal
