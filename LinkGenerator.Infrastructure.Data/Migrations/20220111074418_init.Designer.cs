@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LinkGenerator.Infrastructure.Data.Migrations
 {
-    [DbContext(typeof(SqliteDbContext))]
+    [DbContext(typeof(LinkDbContext))]
     [Migration("20220111074418_init")]
     partial class init
     {

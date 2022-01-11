@@ -19,8 +19,4 @@
     <ProjectReference Include="..\LinkGenerator.Infrastructure.Data\LinkGenerator.Infrastructure.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>

@@ -6,9 +6,9 @@ using System.Text;
 
 namespace LinkGenerator.Infrastructure.Data.DbConfiguration
 {
-    public class SqliteDbContext:DbContext
+    public class LinkDbContext:DbContext
     {
-        public SqliteDbContext(DbContextOptions<SqliteDbContext> options):base(options)
+        public LinkDbContext(DbContextOptions<LinkDbContext> options):base(options)
         {
 
         }

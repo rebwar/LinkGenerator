@@ -31,7 +31,7 @@ namespace LinkGenerator.Endpoints.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             string connectionString = Configuration.GetConnectionString("SqliteConn");
-            services.AddDbContext<SqliteDbContext>(options => options.UseSqlite(connectionString));
+            services.AddDbContext<LinkDbContext>(options => options.UseSqlite(connectionString));
             services.AddScoped<ILinkGenerator, LinkRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>

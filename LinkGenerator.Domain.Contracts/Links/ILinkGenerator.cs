@@ -8,9 +8,13 @@ namespace LinkGenerator.Domain.Contracts.Links
 {
    public interface ILinkGenerator
     {
-        Task CreateLink(string url);
+        Task CreateLink(Link link);
 
-        Task<Link> ShortLinkRequset(string code);
+        Task<Link> LinkRequset(string code);
+
+        Task<bool> CheckUniqueCode(string code);
+
+        Task AddVisits(int id);
 
         
 

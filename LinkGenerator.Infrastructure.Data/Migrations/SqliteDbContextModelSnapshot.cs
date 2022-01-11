@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LinkGenerator.Infrastructure.Data.Migrations
 {
-    [DbContext(typeof(SqliteDbContext))]
+    [DbContext(typeof(LinkDbContext))]
     partial class SqliteDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
