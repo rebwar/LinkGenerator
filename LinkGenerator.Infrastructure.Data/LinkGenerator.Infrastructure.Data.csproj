@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LinkGenerator.Domain.Contracts\LinkGenerator.Domain.Contracts.csproj" />
+    <ProjectReference Include="..\LinkGenerator.Domain.Core\LinkGenerator.Domain.Core.csproj" />
+  </ItemGroup>
+
 </Project>

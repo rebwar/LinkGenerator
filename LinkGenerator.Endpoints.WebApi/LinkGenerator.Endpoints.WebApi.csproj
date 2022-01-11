@@ -8,4 +8,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LinkGenerator.Domain.Contracts\LinkGenerator.Domain.Contracts.csproj" />
+    <ProjectReference Include="..\LinkGenerator.Domain.Core\LinkGenerator.Domain.Core.csproj" />
+    <ProjectReference Include="..\LinkGenerator.Infrastructure.Data\LinkGenerator.Infrastructure.Data.csproj" />
+  </ItemGroup>
+
 </Project>
