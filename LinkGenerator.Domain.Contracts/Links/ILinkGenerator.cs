@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 namespace LinkGenerator.Domain.Contracts.Links
 {
-   public interface ILinkGenerator
+    public interface ILinkGenerator
     {
         Task CreateLink(Link link);
 
         Task<Link> LinkRequset(string code);
 
-        Task<bool> CheckUniqueCode(string code);
-
         Task AddVisits(int id);
 
-        
+
 
     }
 }

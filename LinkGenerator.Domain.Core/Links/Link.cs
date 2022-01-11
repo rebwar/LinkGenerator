@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinkGenerator.Domain.Core.Links
 {
-   public class Link
+    public class Link
     {
         public int LinkId { get; set; }
         public string Url { get; set; }

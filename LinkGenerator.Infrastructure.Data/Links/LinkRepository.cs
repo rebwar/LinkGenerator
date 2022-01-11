@@ -16,14 +16,13 @@ namespace LinkGenerator.Infrastructure.Data.Links
 
         public LinkRepository(LinkDbContext context)
         {
-           _context = context;
+            _context = context;
         }
-
-       
 
         public async Task CreateLink(Link link)
         {
-           await _context.Links.AddAsync(link);
+            await _context.Links.AddAsync(link);
+            await _context.SaveChangesAsync();
         }
 
         public async Task<Link> LinkRequset(string code)
@@ -32,17 +31,13 @@ namespace LinkGenerator.Infrastructure.Data.Links
             return link;
         }
 
-        public async Task<bool> CheckUniqueCode(string code)
-        {
-            var result = await _context.Links.SingleOrDefaultAsync(t => t.GenerateCode == code);
-            return (result != null) ? true : false;
-        }
-
         public async Task AddVisits(int id)
         {
-            var result =await _context.Links.SingleOrDefaultAsync(t => t.LinkId == id);
+            var result = await _context.Links.SingleOrDefaultAsync(t => t.LinkId == id);
             result.VisitCount += 1;
             _context.SaveChanges();
         }
+
+
     }
 }
